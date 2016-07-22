@@ -25,7 +25,7 @@ then
      lang="${array[i]}"
      echo $lang 'training data'
      curl https://github.com/vegmorse/heroku-buildpack-tesseract-master/blob/master/tesseract-ocr-3.02.eng.tar.gz \
-  -o - | tar -xz -C $INSTALL_DIR_TRAINING_DATA -f -
+  -o - | tar -xvf  -C $INSTALL_DIR_TRAINING_DATA -f -
 
    done
 fi
